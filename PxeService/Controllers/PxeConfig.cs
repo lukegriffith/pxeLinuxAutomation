@@ -39,6 +39,9 @@ namespace PxeService.Controllers
 
             content = string.Format(template, os, OSMap[os]);
 
+			Console.Write("Writing content as {0}\n\n",mac);
+			Console.Write(content);
+
             try 
             {
                 System.IO.File.WriteAllText(mac, content);

@@ -1,0 +1,10 @@
+ DEFAULT menu.c32
+ PROMPT 0
+
+ MENU TITLE PXE Special Boot Menu
+ MENU INCLUDE pxelinux.cfg/graphics.conf
+ MENU AUTOBOOT Starting Local System in # seconds
+
+ LABEL AutoMenu
+   MENU LABEL Windows
+   KERNEL pxeboot.0
